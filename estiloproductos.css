@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf2;
+    color: #3b2f00;
+  }
+  
+
+  header {
+    background-color: #d4af37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logo img {
+    width: 80px;
+  }
+  
+  .titulo {
+    font-size: 2.2rem;
+    color: #3b2f00;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .botoningresar {
+    background-color: #a67c00;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .botoningresar:hover {
+    background-color: #805700;
+  }
+  
+
+  nav {
+    background-color: #b08900;
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #3b2f00;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+
+  .principalinicio {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes cuadro {
+    0% {
+      background: linear-gradient(90deg, beige, #ac9515);
+    }
+    100% {
+      background: linear-gradient(90deg, beige, #ecd138);
+    }
+  }
+  
+  .inicio {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 600px;
+    min-height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    animation: cuadro 3s infinite alternate;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .item {
+    width: 200px;
+    height: 90px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid rgb(174, 130, 0);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+  }
+  
+  .itemVentas{
+    width: 200px;
+    height: 120px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid rgb(174, 130, 0);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+  }
+  .itemTipo{
+    width: 200px;
+    height: 120px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid rgb(174, 130, 0);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+  }
+
+  .item:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+  }
+  
+
+  .fecha,
+  .categorias,
+  .producto {
+    background-color: #cfb41b;
+    width: 100%;
+    height: 28px;
+    border: none;
+    padding: 4px;
+    color: #3b2f00;
+    font-weight: bold;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #3b2f00aa;
+  }
+  
+
+  footer {
+    background-color: #d4af37;
+    color: #3b2f00;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  footer .redes a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  footer .redes a img:hover {
+    transform: scale(1.2);
+  }
+  
+  footer .web {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  

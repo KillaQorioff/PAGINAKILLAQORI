@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estiloreportes.css">
+  <title>Killa Qori</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/isologo killaqori.png" alt="Logo Killa Qori">
+        </div>
+        <div class="titulo">
+            <h1>Killa Qori</h1>
+        </div>
+        <div class="boton">
+            <a href="index.html" class="botonsalir">SALIR</a>
+         </div>
+        
+    </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="ventas.html">Ventas</a></li>
+      <li><a href="reportes.html">Reportes</a></li>
+    </ul>
+  </nav>
+
+  <section class="reporte-formulario">
+    <h2>Registro de Reportes</h2>
+    <form class="formulario-reporte">
+      <div class="campo">
+        <label for="fecha">Fecha del Reporte</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </div>
+  
+      <div class="campo">
+        <label for="nombre">Responsable</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required>
+      </div>
+  
+      <div class="campo">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" placeholder="Ingrese el detalle del reporte" required></textarea>
+      </div>
+  
+      <div class="campo">
+        <label for="categoria">Categoría</label>
+        <select id="categoria" name="categoria" required>
+          <option value="">Seleccione</option>
+          <option value="Ventas">Ventas</option>
+          <option value="Producto">Producto</option>
+          <option value="Cliente">Cliente</option>
+        </select>
+      </div>
+  
+      <button type="submit" class="botoningresar">Registrar</button>
+    </form>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Killa Qori - Todos los derechos reservados</p>
+    <div class="redes">
+      <a href="#"><img src="img/facebook logo.png" alt="Facebook"></a>
+      <a href="#"><img src="img/instagram logo.png" alt="Instagram"></a>
+      <a href="#"><img src="img/direccion logo.avif" alt="Dirección"></a>
+    </div>
+    <p class="web">www.killaqori.com</p>
+  </footer>
+</body>
+</html>

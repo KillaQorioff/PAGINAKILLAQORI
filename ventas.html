@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Killa Qori - Registro de Compras</title>
+  <link rel="stylesheet" href="estiloproductos.css" />
+  <link rel="stylesheet" href="estiloventas.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="img/isologo killaqori.png" alt="Logo Killa Qori" />
+    </div>
+    <div class="titulo">Killa Qori</div>
+    <a href="index.html" class="botoningresar">SALIR</a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="ventas.html">Ventas</a></li>
+      <li><a href="reportes.html">Reportes</a></li>
+    </ul>
+  </nav>
+
+  <section class="principalinicio">
+    <form class="inicio">
+      <div class="itemFactura">
+        <label for="factura">Número de Factura</label><br />
+        <input type="text" id="factura" name="factura" placeholder="Ej. 001-2025" />
+      </div>
+
+      <div class="itemFecha">
+        <label for="fecha">Fecha de Compra</label><br />
+        <input type="date" id="fecha" name="fecha" />
+      </div>
+      <div class="itemPago">
+        <label for="metodo">Método de Pago</label><br />
+        <select id="metodo" name="metodo">
+          <option>Seleccione</option>
+          <option value="tarjeta">Tarjeta</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="transferencia">Transferencia</option>
+        </select>
+      </div>
+
+      <div class="itemEstado">
+        <label>Estado de la Compra</label><br />
+        <input type="radio" id="pendiente" name="estado" value="Pendiente" />
+        <label for="pendiente">Pendiente</label>
+        <input type="radio" id="pagada" name="estado" value="Pagada" />
+        <label for="pagada">Pagada</label>
+        <input type="radio" id="cancelada" name="estado" value="Cancelada" />
+        <label for="cancelada">Cancelada</label>
+      </div>
+
+      <div class="itemComentario">
+        <label for="comentario">Comentario</label><br />
+        <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Agregue un comentario..."></textarea>
+      </div>
+
+      <div class="itemGuardar">
+        <button type="submit">Guardar</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Killa Qori - Todos los derechos reservados</p>
+    <div class="redes">
+      <a href="#"><img src="img/facebook logo.png" alt="Facebook" /></a>
+      <a href="#"><img src="img/instagram logo.png" alt="Instagram" /></a>
+      <a href="#"><img src="img/direccion logo.avif" alt="Dirección" /></a>
+    </div>
+    <p class="web">www.killaqori.com</p>
+  </footer>
+</body>
+</html>

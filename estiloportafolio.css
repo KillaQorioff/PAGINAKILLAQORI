@@ -1,0 +1,71 @@
+.catalogo-contenedor {
+    background-color: #fff8e5;
+    border: 4px solid #d4af37;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .titulo-catalogo {
+    text-align: center;
+    font-size: 2rem;
+    color: #3b2f00;
+    margin-bottom: 30px;
+  }
+  
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .producto {
+    background-color: #fff;
+    border: 1px solid #f3d1c1;
+    padding: 10px;
+    text-align: center;
+    Border-radius: 8px;
+    max-width: 150px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .producto h3 {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .producto span {
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .catalogo {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .catalogo {
+      grid-template-columns: 1fr;
+    }
+  }
+  
